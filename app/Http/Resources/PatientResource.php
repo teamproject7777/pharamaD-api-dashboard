@@ -1,10 +1,10 @@
-3<?php
+<?php
 
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class EmployeeResource extends JsonResource
+class PatientResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,4 +16,6 @@ class EmployeeResource extends JsonResource
     {
         return parent::toArray($request);
     }
+
+    
 }
