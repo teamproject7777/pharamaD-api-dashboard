@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\GiveAwayController;
+use App\Http\Controllers\PeriodicalMedicineController;
+use App\Http\Controllers\PatientController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +19,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Employee
+
+
+
+
+// Routes
 Route::resource('employees', EmployeeController::class);
+Route::resource('patiens', PatientController::class);
+Route::resource('givaways', GiveAwayController::class);
+Route::resource('periodicals', PeriodicalMedicineController::class);
+Route::resource('orders', OrderController::class);

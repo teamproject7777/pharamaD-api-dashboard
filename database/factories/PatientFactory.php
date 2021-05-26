@@ -24,7 +24,7 @@ class patientFactory extends Factory
         return [
             
                 'name' => $this->faker->name,
-                'phone' => $this->faker->0965407777,
+                'phone_number' => $this->faker->phoneNumber,
             
         ];
     }
