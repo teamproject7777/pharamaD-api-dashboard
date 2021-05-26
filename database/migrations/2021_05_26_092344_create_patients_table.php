@@ -17,7 +17,6 @@ class CreatePatientsTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('phone')->nullable();
-            $table->boolean('active')->default(true);
             $table->softDeletes();
             $table->timestamps();
         });

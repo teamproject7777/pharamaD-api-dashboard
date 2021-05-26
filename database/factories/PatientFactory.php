@@ -22,7 +22,10 @@ class patientFactory extends Factory
     public function definition()
     {
         return [
-            //
+            
+                'name' => $this->faker->name,
+                'phone' => $this->faker->0965407777,
+            
         ];
     }
 }
