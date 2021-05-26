@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\GiveAwayController;
 use App\Http\Controllers\PeriodicalMedicineController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -34,7 +34,6 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/auth/logout', [AuthController::class, 'logout']);
 });
 // Routes
-Route::resource('employees', EmployeeController::class);
 Route::resource('patiens', PatientController::class);
 Route::resource('givaways', GiveAwayController::class);
 Route::resource('periodicals', PeriodicalMedicineController::class);
