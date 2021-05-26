@@ -19,7 +19,7 @@ class PatientTransformer
                     $patient->name = $value;
                     break;
                 case 'phone_number':
-                    $employee->phone_number = $value;
+                    $patient->phone_number = $value;
                     break;
                 
             }

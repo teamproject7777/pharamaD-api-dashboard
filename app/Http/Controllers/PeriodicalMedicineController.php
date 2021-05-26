@@ -17,36 +17,56 @@ class PeriodicalMedicineController extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'patient_name' => 'required|string',
+            'medicine_name' => 'required|string',
+            'address' => 'required|string',
+            'phone' => 'required|string',
+            'time' => 'required|string',
+            'note' => 'required|string',
+            // 'image' => ''
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->errors()->toArray(), 422);
+        }
+
+        DB::beginTransaction();
+        try {
+            $periodicalMedicine = PatientTransformer::toInstance($validator->validate());
+            $periodicalMedicine->save();
+            DB::commit();
+        } catch (Exception $ex) {
+            Log::info($ex->getMessage());
+            DB::rollBack();
+            return response()->json($ex->getMessage(), 409);
+        }
+
+        return (new PeriodicalMedicineResource($periodicalMedicine))
+            ->additional([
+                'meta' => [
+                    'success' => true,
+                    'message' => "periodical created"
+                ]
+            ]);
+    
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\PeriodicalMedicine  $periodicalMedicine
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show(PeriodicalMedicine $periodicalMedicine)
     {
-        //
+        return (new PeriodicalMedicineResource($periodicalMedicine))
+            ->additional([
+                'meta' => [
+                    'success' => true,
+                    'message' => "periodicalMedicine found"
+                ]
+            ]);
     }
 
     /**

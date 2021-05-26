@@ -62,7 +62,7 @@ class PatientController extends Controller
             return response()->json($ex->getMessage(), 409);
         }
 
-        return (new PatientResource($employee))
+        return (new PatientResource($patient))
             ->additional([
                 'meta' => [
                     'success' => true,

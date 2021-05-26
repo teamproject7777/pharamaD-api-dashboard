@@ -15,6 +15,13 @@ class CreatePeriodicalMedicinesTable extends Migration
     {
         Schema::create('periodical_medicines', function (Blueprint $table) {
             $table->id();
+            $table->string('patient_name')->nullable();
+            $table->string('medicine_name')->nullable();
+            $table->string('address')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('time')->nullable();
+            $table->string('note')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
