@@ -485,16 +485,209 @@
                                         <!-- <h2 class="text-success">$5470</h2></div> -->
                                 </div>
                             </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <!-- Row -->
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-12">
+                                    <h2 class="m-b-0"><i class="mdi mdi-briefcase-check text-info"></i></h2>
+                                    <h6 class="">Customer Name : <span class="card-subtitle">mohammed</span></h6>
+                                    <h6 class="">Phone No : <span class="card-subtitle">0965407777</span></h6>
+                                    <h6 class="">Adress : <span class="card-subtitle">khartoum </span></h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="m-b-0"><i class="mdi mdi-alert-circle text-success"></i></h2>
+                                    <h6 class="">Order ID : <span class="card-subtitle">15</span></h6>
+                                    <h6 class="">Order Date : <span class="card-subtitle">2-6-2021</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6 class="">Pharmcy Name : <span class="card-subtitle">TL</span></h6>
+                                    <h6 class="">Phone No : <span class="card-subtitle">0921511875</span></h6>
+                                    <h6 class="">Adress : <span class="card-subtitle">Omderman</span></h6>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                
+                </div>
+                <!-- Row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <!-- <div class="card-body">
+                                <div class="d-flex no-block">
+                                    <h4 class="card-title"><br/><small class="text-muted">Emplyee earning report</small></h4>
+                                    <div class="ml-auto">
+                                        <select class="custom-select">
+                                            <option selected="">July</option>
+                                            <option value="1">Aug</option>
+                                            <option value="2">Sept</option>
+                                            <option value="3">Oct</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="bg-light p-20">
+                                <div class="d-flex">
+                                    <div class="align-self-center">
+                                        <h3 class="m-b-0">Order items</h3><small></small></div>
+                                    <div class="ml-auto align-self-center">
+                                        <!-- <h2 class="text-success">$5470</h2></div> -->
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                   data
+                                    <table class="table table-hover earning-box">
+                                        <thead>
+                                            <tr>
+                                                <th>#id</th>
+                                                <th >Product name</th>
+                                                <th>Qountity </th>
+                                                <th>Unity price</th>
+                                                <th>Total</th>
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                
+                                                <td>1</td>
+                                                <td>Panadol</td>
+                                                <td>20</td>
+                                                <td>5</td>
+                                                <td>25</td>
+                                                
+                                                
+                                            </tr>
+                                           
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                
+                                                <td>1</td>
+                                                <td>oxdoo</td>
+                                                <td>50</td>
+                                                <td>20</td>
+                                                <td>70</td>
+                                                
+                                                
+                                            </tr>
+                                           
+                                        </tbody>
+                                        <td style="text-align: right">Subtotal : <span>50</span></td>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    
+                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <!-- <div class="card-body">
+                                <div class="d-flex no-block">
+                                    <h4 class="card-title"><br/><small class="text-muted">Emplyee earning report</small></h4>
+                                    <div class="ml-auto">
+                                        <select class="custom-select">
+                                            <option selected="">July</option>
+                                            <option value="1">Aug</option>
+                                            <option value="2">Sept</option>
+                                            <option value="3">Oct</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="bg-light p-20">
+                                <div class="d-flex">
+                                    <div class="align-self-center">
+                                        <h3 class="m-b-0">Order items</h3><small></small></div>
+                                    <div class="ml-auto align-self-center">
+                                        <!-- <h2 class="text-success">$5470</h2></div> -->
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover earning-box">
+                                        <thead>
+                                            <tr>
+                                                <th>Delivery Option</th>
+                                                <th >Payment option</th>
+                                                <th>Total </th>
+                                                
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                
+                                                <td>fast Delivery</td>
+                                                <td>Card</td>
+                                                <td>200</td>
+                                                
+                                                
+                                                
+                                            </tr>
+                                           
+                                        </tbody>
+
+                                        <td style="text-align: right">Total : <span>50</span></td>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    
+                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
                 <!-- Row -->
+                
                 
                 <!-- Row -->
                 
